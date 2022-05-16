@@ -1,8 +1,101 @@
-html, body {
-	font: 14px/1.21 'Helvetica Neue', arial, sans-serif;
-	font-weight: 400;
+html {
+  display: block;
 }
-
+body {
+  margin: 0;
+}
 h1 {
+  font-size: 1.8rem;
+  color: white;
+}
+.topNav {
+  overflow: hidden;
+  background-color: #0a1128;
+  text-align: center;
+}
+.content {
+  padding: 5%;
+}
+.card-grid {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.card {
+  background-color: white;
+  box-shadow: 2px 2px 12px 1px rgba(140, 140, 140, 0.5);
+}
+li {
+  cursor: pointer;
+  padding: 5px;
+  font-size: 1.3rem;
+  text-decoration: underline;
+  color: blue;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modalContent {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 5px;
+  width: 60%;
+}
+form{
 	text-align: center;
+}
+label {
+  font-size: 1.2rem;
+}
+input {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 18px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.form-control{
+	padding-bottom: 20px;
+	display: flex;
+	justify-content: space-around;
+}
+input[type="submit"],button{
+	border: none;
+	color: #fefcfb;
+	padding: 15px 15px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	width: 100px;
+	border-radius: 4px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+.submit{
+	background-color: #034078;
+}
+.cancel{
+	background-color: crimson;
+}
+.submit:hover{
+	background-color: #1282A2;
+}
+.cancel:hover{
+	background-color: rgba(236, 22, 64, 0.781);
 }
